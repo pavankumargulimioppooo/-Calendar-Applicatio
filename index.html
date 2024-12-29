@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Communication Tracker</h1>
+    </header>
+    <main>
+        <section id="admin-module">
+            <h2>Admin Module</h2>
+            <div id="company-management">
+                <h3>Company Management</h3>
+                <form id="add-company-form">
+                    <input type="text" id="company-name" placeholder="Company Name" required>
+                    <input type="text" id="location" placeholder="Location">
+                    <input type="url" id="linkedin-profile" placeholder="LinkedIn URL">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="phone" placeholder="Phone Number">
+                    <textarea id="comments" placeholder="Comments"></textarea>
+                    <input type="number" id="periodicity" placeholder="Periodicity (Days)" required>
+                    <button type="submit">Add Company</button>
+                </form>
+                <ul id="company-list"></ul>
+            </div>
+        </section>
+
+        <section id="user-module">
+            <h2>User Module</h2>
+            <div id="dashboard">
+                <h3>Dashboard</h3>
+                <table id="company-dashboard">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Last Five Communications</th>
+                            <th>Next Communication</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
